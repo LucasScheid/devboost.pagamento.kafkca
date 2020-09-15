@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Domain\devboost.dronedelivery.core.domain.csproj" />
+    <ProjectReference Include="..\Core\Services\devboost.dronedelivery.core.services\devboost.dronedelivery.core.services.csproj" />
+    <ProjectReference Include="..\Infra\Data\devboost.dronedelivery.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
